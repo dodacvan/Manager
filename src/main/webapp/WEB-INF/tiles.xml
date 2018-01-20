@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+ 
+   <!-- Login Define -->
+   <definition name="loginPage" 
+       template="/WEB-INF/layouts/login.jsp">  
+         
+   </definition> 
+ 
+   <!-- Base Define -->
+   <definition name="base.definition" 
+       template="/WEB-INF/layouts/base.jsp">  
+       <put-attribute name="controller" value="Name of Controller" />  
+       <put-attribute name="action" value="Name of action" />  
+       <put-attribute name="content" value="" />   
+   </definition>  
+ 
+   <!-- List employee Page -->
+   <definition name="listEmployee" extends="base.definition">  
+       <put-attribute name="controller" value="Employee" />  
+       <put-attribute name="action" value="list" />  
+       <put-attribute name="content" value="/WEB-INF/body/listEmployee.jsp" />    
+   </definition> 
+   
+   <!-- Employee info -->
+   <definition name="employeeInfo" extends="base.definition">  
+       <put-attribute name="controller" value="Employee" />  
+       <put-attribute name="action" value="info" />  
+       <put-attribute name="content" value="/WEB-INF/body/employeeInfo.jsp" />    
+   </definition>
+   
+   <!-- Employee create -->
+   <definition name="addEmployee" extends="base.definition">  
+       <put-attribute name="controller" value="Employee" />  
+       <put-attribute name="action" value="add" />  
+       <put-attribute name="content" value="/WEB-INF/body/addEmployee.jsp" />    
+   </definition>
+   
+   <!-- Employee edit -->
+   <definition name="editEmployee" extends="base.definition">  
+       <put-attribute name="controller" value="Employee" />  
+       <put-attribute name="action" value="edit" />  
+       <put-attribute name="content" value="/WEB-INF/body/editEmployee.jsp" />    
+   </definition>  
+   		
+   <!-- Department list -->
+   <definition name="listDepartment" extends="base.definition">  
+       <put-attribute name="controller" value="Department" />  
+       <put-attribute name="action" value="list" />  
+       <put-attribute name="content" value="/WEB-INF/body/listDepartment.jsp" />    
+   </definition>
+   
+   <!-- Department info -->
+   <definition name="departmentInfo" extends="base.definition">  
+       <put-attribute name="controller" value="Department" />  
+       <put-attribute name="action" value="info" />  
+       <put-attribute name="content" value="/WEB-INF/body/departmentInfo.jsp" />    
+   </definition> 
+   
+   <!-- Department create -->
+   <definition name="addDepartment" extends="base.definition">  
+       <put-attribute name="controller" value="Department" />  
+       <put-attribute name="action" value="add" />  
+       <put-attribute name="content" value="/WEB-INF/body/addDepartment.jsp" />    
+   </definition>
+   
+   <!-- Department edit -->
+   <definition name="editDepartment" extends="base.definition">  
+       <put-attribute name="controller" value="Department" />  
+       <put-attribute name="action" value="edit" />  
+       <put-attribute name="content" value="/WEB-INF/body/editDepartment.jsp" />    
+   </definition>  
+   
+   <!-- User list -->
+   <definition name="listUser" extends="base.definition">  
+       <put-attribute name="controller" value="User" />  
+       <put-attribute name="action" value="list" />  
+       <put-attribute name="content" value="/WEB-INF/body/listUser.jsp" />    
+   </definition>
+   
+   <!-- User add -->
+   <definition name="addUser" extends="base.definition">  
+       <put-attribute name="controller" value="User" />  
+       <put-attribute name="action" value="add" />  
+       <put-attribute name="content" value="/WEB-INF/body/addUser.jsp" />    
+   </definition> 
+   
+   <!-- User edit -->
+   <definition name="editUser" extends="base.definition">  
+       <put-attribute name="controller" value="User" />  
+       <put-attribute name="action" value="edit" />  
+       <put-attribute name="content" value="/WEB-INF/body/editUser.jsp" />    
+   </definition>      
+</tiles-definitions>
